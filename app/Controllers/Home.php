@@ -9,24 +9,14 @@ class Home extends BaseController
         return view('pages/index');
     }
 
-
-    public function load_section($page='home'){
-
-    
-    $page = preg_replace('/[^a-z0-9_\-]/', '', $page);
-    if ($page == 'home') {
+        public function about()
+    {
+        return view('pages/about');
     }
-    $allowed_pages = [
 
-        'home'=> 'pages/home',
-        'about'=> 'pages/about',
-        'services'=> 'pages/services',
-    ];
+        public function services()
+    {
 
-    if (!array_key_exists($page, $allowed_pages)) {
-        $page = 'home';
-    }
-        return view($allowed_pages[$page]);
-
-    }
+        return view('pages/services');
+}
 }
