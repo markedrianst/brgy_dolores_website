@@ -1,0 +1,175 @@
+       /* FOOTER */
+        .footer {
+            background-color: var(--dark-gray);
+            color: white;
+            padding: 4rem 0 2rem;
+            border-top: 4px solid var(--primary-red);
+        }
+
+        .footer-title {
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: white;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-red);
+            margin-top: 8px;
+        }
+
+        .footer-links a {
+            display: block;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            margin-bottom: 0.6rem;
+            transition: all 0.2s;
+            padding-left: 0;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-left: 8px;
+            border-left: 3px solid var(--primary-red);
+        }
+
+        .footer-contact p {
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+
+        .footer-contact i {
+            color: var(--primary-red);
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-logo img {
+            height: 120px;
+            width: 120px;
+            margin-right: 15px;
+            border: 2px solid var(--primary-red);
+            border-radius: 8px;
+            padding: 5px;
+            background: white;
+        }
+
+        .footer-logo-text h5 {
+            margin-bottom: 0;
+            line-height: 1.3;
+        }
+
+        .footer-logo-text small {
+            color: rgba(255, 255, 255, 0.7);
+            display: block;
+            margin-top: 3px;
+        }
+
+        .footer-description {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            width: 42px;
+            height: 42px;
+            background: rgba(211, 47, 47, 0.2);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s;
+            border: 1px solid rgba(211, 47, 47, 0.3);
+        }
+
+        .social-links a:hover {
+            background: var(--primary-red);
+            transform: translateY(-3px);
+            color: white;
+        }
+
+        .footer-divider {
+            border-color: rgba(255, 255, 255, 0.15);
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .footer-bottom {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+
+        .footer-hours {
+            background: rgba(211, 47, 47, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            border-left: 3px solid var(--primary-red);
+        }
+
+        .footer-hours p {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+
+        /* UTILITY CLASSES */
+        .section-title {
+            color: var(--dark-gray);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-red);
+        }
+
+        .text-primary-custom {
+            color: var(--primary-red) !important;
+        }
+
+        .bg-light-custom {
+            background-color: var(--light-red) !important;
+        }
+
+        .btn-outline-primary {
+            border-color: var(--primary-red);
+            color: var(--primary-red);
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: var(--primary-red);
+            border-color: var(--primary-red);
+            color: white;
+        }
