@@ -185,12 +185,40 @@
         </div>
     </div>
 </section>
-<?php 
-// Get current URI for active menu detection
-$uri = service('uri');
-$segment = $uri->getSegment(1);
-?>
-<!-- SERVICES REQUEST CARDS -->
+<?php if (!empty($news)): ?>
+<section class="news-section py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Latest News</h2>
+        <div class="row g-4 justify-content-center"> 
+            <?php foreach ($news as $item): ?>
+                <div class="col-md-6 d-flex"> <!-- 2 columns per row -->
+                    <a href="<?= base_url('news_updates') ?>" class="text-decoration-none text-dark w-100">
+                        <div class="news-card shadow-sm rounded overflow-hidden position-relative w-100">
+                            <img src="<?= base_url('assets/images/' . $item['image']) ?>"
+                                alt="<?= esc($item['alt']) ?>" class="img-fluid news-img">
+                            <div class="news-content p-3 text-center bg-white">
+                                <h5 class="news-title fw-bold"><?= esc($item['title']) ?></h5>
+                                <p class="news-date text-muted small mb-2"><?= esc($item['date']) ?></p>
+                                <p class="news-description text-truncate" style="max-height: 3em; overflow: hidden;">
+                                    <?= esc($item['description']) ?>
+                                </p>
+                                <span class="read-more text-primary fw-semibold">Read More &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            <?php endforeach; ?>
+        </div>
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
+            <a href="<?=base_url('news_updates')?>" class="btn btn-primary-custom px-5 py-3">
+                View More <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </div>
+</section>
+<?php endif; ?>
+
+
 <section id="service-cards" class="py-5 bg-light">
     <div class="container">
         <div class="text-center mb-5" data-aos="fade-up">
@@ -276,7 +304,7 @@ $segment = $uri->getSegment(1);
             </a>
         </div>
     </div>
-</section>
+</section>|
 
 <section class="quick-info-section py-5">
     <div class="container ">
@@ -294,7 +322,6 @@ $segment = $uri->getSegment(1);
                 </div>
             </div>
 
-            <!-- Office Hours -->
             <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
                 <div class="info-card">
                     <div class="info-icon">
@@ -305,7 +332,6 @@ $segment = $uri->getSegment(1);
                     <p><strong>Sat:</strong> 8:00 AM - 12:00 PM</p>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
