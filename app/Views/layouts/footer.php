@@ -5,9 +5,9 @@
                 <div class="col-lg-4">
                     <div class="footer-logo">
                         <img 
-                            src="<?= base_url('images/dolores_logo.png') ?>" 
+                            src="<?= base_url('assets/images/dolores_logo.png') ?>" 
                             style="max-width: 120px;"
-                        >                         <div class="footer-logo-text">
+                        >    <div class="footer-logo-text">
                             <h5>Barangay Dolores</h5>
                             <small>Capas, Tarlac | Official Website</small>
                         </div>

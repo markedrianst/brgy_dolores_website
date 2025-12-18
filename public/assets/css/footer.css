@@ -1,0 +1,396 @@
+/* MODERN FOOTER DESIGN */
+.footer {
+    background: var(--dark-gray);
+    color: white;
+    padding: 5rem 0 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-red) 0%, #ff6b6b 50%, var(--primary-red) 100%);
+    background-size: 200% 100%;
+    animation: gradientShift 3s ease infinite;
+}
+
+.footer::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(211, 47, 47, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: float 15s ease-in-out infinite;
+}
+
+/* Footer Title - Modern Style */
+.footer-title {
+    font-weight: 700;
+    margin-bottom: 1.75rem;
+    color: white;
+    position: relative;
+    display: inline-block;
+    font-size: 1.25rem;
+    letter-spacing: -0.5px;
+}
+
+.footer-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-red), #ff6b6b);
+    margin-top: 10px;
+    border-radius: 2px;
+    animation: expand 2s ease-in-out infinite;
+}
+
+/* Footer Links - Modern Hover Effects */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-links a {
+    display: inline-flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-left: 20px;
+}
+
+.footer-links a::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    color: var(--primary-red);
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 30px;
+    transform: translateX(5px);
+}
+
+.footer-links a:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Footer Contact - Modern Info Cards */
+.footer-contact p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.footer-contact p:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-left-color: var(--primary-red);
+    transform: translateX(5px);
+}
+
+.footer-contact i {
+    color: var(--primary-red);
+    width: 24px;
+    margin-right: 12px;
+    font-size: 1.1rem;
+}
+
+/* Footer Logo - Modern Design */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 15px;
+}
+
+.footer-logo img {
+    height: 90px;
+    width: 90px;
+    border: 3px solid var(--primary-red);
+    border-radius: 50%;
+    background: white;
+    padding: 10px;
+    box-shadow: 
+        0 4px 20px rgba(211, 47, 47, 0.3),
+        0 0 0 0 rgba(211, 47, 47, 0.4);
+    animation: pulse 2s infinite;
+    transition: all 0.3s ease;
+}
+
+.footer-logo img:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 6px 30px rgba(211, 47, 47, 0.5);
+}
+
+.footer-logo-text h5 {
+    margin-bottom: 5px;
+    line-height: 1.3;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: -0.5px;
+}
+
+.footer-logo-text small {
+    color: rgba(255, 255, 255, 0.65);
+    display: block;
+    margin-top: 3px;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+/* Footer Description */
+.footer-description {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+/* Social Links - Modern Glassmorphism */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    width: 48px;
+    height: 48px;
+    background: rgba(211, 47, 47, 0.1);
+    backdrop-filter: blur(10px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(211, 47, 47, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.social-links a::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--primary-red), #ff6b6b);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover::before {
+    opacity: 1;
+}
+
+.social-links a i {
+    position: relative;
+    z-index: 1;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(211, 47, 47, 0.4);
+    border-color: var(--primary-red);
+}
+
+/* Footer Divider */
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 3rem 0 2rem;
+    opacity: 0.5;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.9rem;
+}
+
+.footer-bottom a {
+    color: rgba(255, 255, 255, 0.55);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer-bottom a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-red);
+    transition: width 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: var(--primary-red);
+}
+
+.footer-bottom a:hover::after {
+    width: 100%;
+}
+
+/* Footer Hours - Modern Card Design */
+.footer-hours {
+    background: linear-gradient(135deg, rgba(211, 47, 47, 0.12) 0%, rgba(211, 47, 47, 0.08) 100%);
+    padding: 1.5rem;
+    border-radius: 16px;
+    margin-top: 1rem;
+    border-left: 4px solid var(--primary-red);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.footer-hours:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(211, 47, 47, 0.3);
+}
+
+.footer-hours p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.footer-hours p strong {
+    color: white;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.footer-hours .small {
+    color: rgba(255, 255, 255, 0.65);
+    font-style: italic;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    margin-top: 1rem;
+    display: block;
+}
+
+/* Animations */
+@keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, -30px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 
+            0 4px 20px rgba(211, 47, 47, 0.3),
+            0 0 0 0 rgba(211, 47, 47, 0.4);
+    }
+    50% {
+        box-shadow: 
+            0 4px 25px rgba(211, 47, 47, 0.4),
+            0 0 0 10px rgba(211, 47, 47, 0);
+    }
+}
+
+@keyframes expand {
+    0%, 100% { transform: scaleX(1); }
+    50% { transform: scaleX(1.05); }
+}
+
+/* UTILITY CLASSES */
+.text-primary-custom {
+    color: var(--primary-red) !important;
+}
+
+.bg-light-custom {
+    background-color: var(--light-red) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 3rem 0 2rem;
+    }
+    
+    .footer-logo {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .footer-logo img {
+        height: 80px;
+        width: 80px;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .footer-title {
+        font-size: 1.15rem;
+    }
+    
+    .footer-hours {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        padding: 2.5rem 0 1.5rem;
+    }
+    
+    .footer-logo img {
+        height: 70px;
+        width: 70px;
+    }
+    
+    .footer-logo-text h5 {
+        font-size: 1.1rem;
+    }
+    
+    .social-links a {
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+    }
+    
+    .footer-bottom .col-md-6 {
+        text-align: center !important;
+        margin-bottom: 1rem;
+    }
+}
