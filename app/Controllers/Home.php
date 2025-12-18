@@ -6,6 +6,20 @@ class Home extends BaseController
 {
     public function index()
     {
+    $jsonPath = WRITEPATH . 'data/news.json';
+        $news = [];
+
+        if (file_exists($jsonPath)) {
+            $allNews = json_decode(file_get_contents($jsonPath), true);
+
+   
+            usort($allNews, function($a, $b) {
+                return strtotime($b['date']) - strtotime($a['date']);
+            });
+
+            $news = array_slice($allNews, 0, 4);
+        }
+
         
         $galleryPath = ROOTPATH . 'public/assets/gallery/'; 
         
@@ -34,6 +48,7 @@ class Home extends BaseController
         }
         
         $data['gallery_images'] = $images;
+        $data['news'] = $news;
         
         return view('pages/index', $data);
     }
@@ -66,13 +81,19 @@ class Home extends BaseController
 
     public function news_updates()
     {
-        $jsonPath = WRITEPATH . 'data/news.json';
+           $jsonPath = WRITEPATH . 'data/news.json';
         $news = [];
 
         if (file_exists($jsonPath)) {
-            $news = json_decode(file_get_contents($jsonPath), true);
-        }
+            $allNews = json_decode(file_get_contents($jsonPath), true);
 
+   
+            usort($allNews, function($a, $b) {
+                return strtotime($b['date']) - strtotime($a['date']);
+            });
+
+            $news = $allNews;
+        }
         return view('pages/news_updates', [
             'news' => $news
         ]);
