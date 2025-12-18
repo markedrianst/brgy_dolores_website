@@ -1,4 +1,3 @@
-
 /* =====================
    BUTTONS
 ===================== */
@@ -43,7 +42,6 @@
     display: flex;
     align-items: center;
     padding: 120px 0 60px;
-    background: linear-gradient(135deg, var(--light-red), #ffffff);
     position: relative;
     overflow: hidden;
 }
@@ -89,6 +87,19 @@
     line-height: 1.7;
 }
 
+/* Hero Badge */
+.hero-badge {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background: linear-gradient(135deg, rgba(211, 47, 47, 0.1), rgba(211, 47, 47, 0.05));
+    border: 2px solid rgba(211, 47, 47, 0.2);
+    border-radius: 50px;
+    color: var(--primary-red);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
 .hero-highlight {
     margin-top: 2rem;
     padding: 1.5rem;
@@ -123,10 +134,6 @@
     z-index: 1;
 }
 
-#myCarousel .carousel-overlay {
-    background: linear-gradient(135deg, rgba(211, 47, 47, 0.7), rgba(0, 0, 0, 0.5));
-}
-
 #myCarousel .carousel-overlay-light {
     background: rgba(255, 255, 255, 0.1);
 }
@@ -148,6 +155,13 @@
 .carousel-text {
     font-size: 1.25rem;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Modern Carousel for Barangay */
+.modern-carousel {
+    border-radius: 24px;
+    overflow: hidden;
+    border: 3px solid rgba(211, 47, 47, 0.1);
 }
 
 /* =====================
@@ -194,11 +208,166 @@
     color: white;
 }
 
+.info-card h5 {
+    font-weight: 700;
+    color: var(--dark-gray);
+    margin-bottom: 1rem;
+}
+
 .info-number {
     font-size: 2.5rem;
     font-weight: 800;
     color: var(--primary-red);
     margin: 1rem 0;
+}
+
+.info-card small {
+    color: var(--medium-gray);
+    font-size: 0.85rem;
+}
+
+/* =====================
+   ADDITIONAL COMPONENTS
+===================== */
+/* Section Badge */
+.section-badge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: linear-gradient(135deg, var(--primary-red), #ff6b6b);
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* Stats Cards */
+.stat-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    border: 2px solid rgba(211, 47, 47, 0.1);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(211, 47, 47, 0.2);
+    border-color: rgba(211, 47, 47, 0.3);
+}
+
+.stat-card i {
+    font-size: 2rem;
+    color: var(--primary-red);
+    margin-bottom: 0.5rem;
+}
+
+.stat-card h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary-red);
+    margin: 0.5rem 0;
+}
+
+.stat-card p {
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+    margin: 0;
+}
+
+/* Service Request Cards - Modern Design */
+.service-request-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    height: 100%;
+    border: 2px solid rgba(211, 47, 47, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-request-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-red), #ff6b6b);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.service-request-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-request-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(211, 47, 47, 0.2);
+    border-color: rgba(211, 47, 47, 0.3);
+}
+
+.service-request-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(211, 47, 47, 0.1), rgba(211, 47, 47, 0.05));
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.service-request-card:hover .service-request-icon {
+    background: linear-gradient(135deg, var(--primary-red), #ff6b6b);
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.service-request-icon i {
+    font-size: 2rem;
+    color: var(--primary-red);
+    transition: color 0.3s ease;
+}
+
+.service-request-card:hover .service-request-icon i {
+    color: white;
+}
+
+.service-request-title {
+    color: var(--dark-gray);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.service-request-desc {
+    color: var(--medium-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.service-request-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(211, 47, 47, 0.1);
+    border-radius: 50%;
+    color: var(--primary-red);
+    transition: all 0.3s ease;
+}
+
+.service-request-card:hover .service-request-arrow {
+    background: var(--primary-red);
+    color: white;
+    transform: translateX(5px);
 }
 
 /* =====================
@@ -217,11 +386,49 @@
     .hero-title { font-size: 2.4rem; }
     .carousel-title { font-size: 2rem; }
     .carousel-text { font-size: 1rem; }
+    .carousel-caption-custom { padding: 1rem; }
     .info-number { font-size: 2rem; }
+    .stat-card h4 { font-size: 1.5rem; }
 }
 
 @media (max-width: 576px) {
     .hero-title { font-size: 2rem; }
     .btn-primary-custom,
     .btn-outline-primary { width: 100%; margin-bottom: 10px; }
+}
+
+.modern-carousel .carousel-item {
+    height: 300px;
+}
+
+.modern-carousel .carousel-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.modern-carousel .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px 15px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.modern-carousel .carousel-indicators {
+    bottom: 10px;
+}
+
+.modern-carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.modern-carousel .carousel-indicators button.active {
+    background-color: var(--primary-red);
 }
