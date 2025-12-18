@@ -1,6 +1,6 @@
 <?= $this->include('layouts/header') ?>
 <!-- HERO SECTION WITH PARALLAX -->
-<section class="about-hero parallax-section position-relative">
+<section class="about-hero parallax-section position-relative sections">
     <!-- Overlay -->
     <div class="parallax-overlay"></div>
 
@@ -52,13 +52,13 @@
             <div class="row text-center">
                 <div class="col-md-3 mb-4 mb-md-0">
                     <div class="parallax-content fade-in-up">
-                        <div class="stat-number">6,500+</div>
+                    <div class="stat-number counter" data-target="6500" data-suffix="+">0</div>
                         <div class="stat-label">Residents</div>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4 mb-md-0">
                     <div class="parallax-content fade-in-up delay-1">
-                        <div class="stat-number">45+</div>
+                        <div class="stat-number counter" data-target="45">0</div>
                         <div class="stat-label">Years</div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="parallax-content fade-in-up delay-3">
-                        <div class="stat-number">100%</div>
+                        <div class="stat-number counter" data-target="100" data-suffix="%">0</div>
                         <div class="stat-label">Commitment</div>
                     </div>
                 </div>

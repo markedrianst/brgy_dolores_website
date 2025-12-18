@@ -29,7 +29,7 @@ $uri = service('uri');
 $segment = $uri->getSegment(1);
 ?>
 
-<nav class="navbar navbar-expand-lg navbar-custom ">
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="<?= base_url() ?>">
             <div class="logo-wrapper">

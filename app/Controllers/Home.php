@@ -53,4 +53,10 @@ class Home extends BaseController
     {
         return view('pages/services');
     }
+
+    public function news_updates()
+    {
+        return view('pages/news_updates');
+    }
+        
 }
