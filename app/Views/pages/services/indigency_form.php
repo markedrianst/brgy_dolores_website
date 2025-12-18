@@ -1,6 +1,6 @@
 <?= $this->include('layouts/header') ?>
 
-<section class="service-form-page py-5">
+<section class="service-form-page py-5 sections">
     <div class="container">
         <h2 class="section-title text-center mb-4">BRGY Certificate of Indigency Form</h2>
         <p class="text-center text-muted mb-5">
