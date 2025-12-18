@@ -1,7 +1,7 @@
 <?= $this->include('layouts/header') ?>
 
 <!-- MAIN HERO CAROUSEL -->
-<main style="height: 85vh; margin-top: 90px;" id="home">
+<main class="sections" style="height: 85vh;" id="home">
     <div class="container-fluid p-0 h-100">
         <div id="myCarousel"
              class="carousel slide h-100"
@@ -192,7 +192,11 @@
         </div>
     </div>
 </section>
-
+<?php 
+// Get current URI for active menu detection
+$uri = service('uri');
+$segment = $uri->getSegment(1);
+?>
 <!-- SERVICES REQUEST CARDS -->
 <section id="service-cards" class="py-5 bg-light">
     <div class="container">
@@ -201,14 +205,15 @@
                 <i class="bi bi-briefcase me-2"></i>
                 Our Services
             </div>
-            <h2 class="section-title">Request Barangay Services</h2>
+            <h2 class="section-title text-center mb-4">Request Barangay Services</h2>
+
             <p class="text-muted fs-5">Quick access to essential barangay documents and certificates</p>
         </div>
         
         <div class="row g-4">
             <!-- Service Card 1 -->
             <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="#services" class="text-decoration-none">
+                    <a href="<?=base_url('services')?>" class="text-decoration-none">
                     <div class="service-request-card">
                         <div class="service-request-icon">
                             <i class="bi bi-person-badge"></i>
@@ -224,7 +229,7 @@
 
             <!-- Service Card 2 -->
             <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-                <a href="#services" class="text-decoration-none">
+                <a href="<?=base_url('services')?>"class="text-decoration-none">
                     <div class="service-request-card">
                         <div class="service-request-icon">
                             <i class="bi bi-briefcase"></i>
@@ -240,7 +245,7 @@
 
             <!-- Service Card 3 -->
             <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-                <a href="#services" class="text-decoration-none">
+                <a href="<?=base_url('services')?>" class="text-decoration-none">
                     <div class="service-request-card">
                         <div class="service-request-icon">
                             <i class="bi bi-file-earmark-text"></i>
@@ -256,7 +261,7 @@
 
             <!-- Service Card 4 -->
             <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-                <a href="#services" class="text-decoration-none">
+                <a href="<?=base_url('services')?>" class="text-decoration-none">
                     <div class="service-request-card">
                         <div class="service-request-icon">
                             <i class="bi bi-house"></i>
@@ -273,7 +278,7 @@
 
         <!-- View All Services Button -->
         <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
-            <a href="#services" class="btn btn-primary-custom px-5 py-3">
+            <a href="<?=base_url('services')?>" class="btn btn-primary-custom px-5 py-3">
                 View All Services <i class="bi bi-arrow-right ms-2"></i>
             </a>
         </div>

@@ -18,10 +18,7 @@
                         We strive to create a progressive, safe, and empowered community for all residents of Barangay Dolores.
                     </p>
                     <div class="social-links">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-youtube"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-envelope"></i></a>
+                        <a href="https://www.facebook.com/share/1FQnJ4LN4K/?mibextid=wwXIfr" target="_blank"><i class="bi bi-facebook"></i></a>
                     </div>
                 </div>
 
@@ -31,9 +28,7 @@
                         <a href="<?= base_url() ?>">Home</a>
                         <a href="<?= base_url('services') ?>">Services</a>
                         <a href="<?= base_url('about') ?>">About Us</a>
-                        <a href="#announcements">Announcements</a>
-                        <a href="#events">Events</a>
-                        <a href="#officials">Officials</a>
+                        <a href="<?= base_url('news_updates') ?>">News & Updates</a>
                     </div>
                 </div>
 
@@ -84,5 +79,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="<?= base_url('assets/js/app.js') ?>"></script>
+<script src="<?= base_url('assets/js/counter.js') ?>"></script>
 </body>
 </html>

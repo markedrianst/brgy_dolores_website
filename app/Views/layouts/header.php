@@ -28,10 +28,8 @@
 $uri = service('uri');
 $segment = $uri->getSegment(1);
 ?>
-<head>
-    
-</head>
-<nav class="navbar navbar-expand-lg navbar-custom ">
+
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="<?= base_url() ?>">
             <div class="logo-wrapper">
@@ -49,11 +47,6 @@ $segment = $uri->getSegment(1);
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto align-items-lg-center">
-                <li class="nav-item"><a class="nav-link active" href="<?= base_url() ?>">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="<?= base_url('services') ?>">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="<?= base_url('about') ?>">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#announcements">Announcements</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 <li class="nav-item">
                     <a class="nav-link <?= (empty($segment) || $segment == '') ? 'active' : '' ?>" 
                        href="<?= base_url() ?>">Home</a>
@@ -67,10 +60,7 @@ $segment = $uri->getSegment(1);
                        href="<?= base_url('about') ?>">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#announcements">Announcements</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#announcements">News & Updates</a>
                 </li>
             </ul>
         </div>
