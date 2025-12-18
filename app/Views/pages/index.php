@@ -202,7 +202,6 @@
                                 <p class="news-description text-truncate" style="max-height: 3em; overflow: hidden;">
                                     <?= esc($item['description']) ?>
                                 </p>
-                                <span class="read-more text-primary fw-semibold">Read More &rarr;</span>
                             </div>
                         </div>
                     </a>
@@ -219,7 +218,7 @@
 <?php endif; ?>
 
 
-<section id="service-cards" class="py-5 bg-light">
+<section id="service-cards" class="py-5 hero-section">
     <div class="container">
         <div class="text-center mb-5" data-aos="fade-up">
             <div class="section-badge mx-auto mb-3">
