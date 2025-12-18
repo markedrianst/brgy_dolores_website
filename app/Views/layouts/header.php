@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/service-form.css') ?>"> 
     <link rel="stylesheet" href="<?= base_url('assets/css/about.css') ?>"> 
     <link rel="stylesheet" href="<?= base_url('assets/css/news_updates.css') ?>"> 
+    <link rel="icon" href="<?= base_url('assets/images/dolores_logo1.png') ?>" type="image/x-icon">
 
 </head>
 <body>
@@ -32,6 +33,11 @@ $segment = $uri->getSegment(1);
 
 <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
     <div class="container">
+              <a class="navbar-brand d-flex align-items-center" target="_blank" href="https://www.capastarlac.gov.ph/">
+            <div class="logo-wrapper">
+                <img src="<?= base_url('assets/images/capaslogo.png') ?>" class="logo-image" alt="Barangay Dolores Logo">
+            </div>
+        </a>
         <a class="navbar-brand d-flex align-items-center" href="<?= base_url() ?>">
             <div class="logo-wrapper">
                 <img src="<?= base_url('assets/images/dolores_logo1.png') ?>" class="logo-image" alt="Barangay Dolores Logo">
