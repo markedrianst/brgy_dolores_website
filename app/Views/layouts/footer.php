@@ -80,5 +80,6 @@
 
 <script src="<?= base_url('assets/js/app.js') ?>"></script>
 <script src="<?= base_url('assets/js/counter.js') ?>"></script>
+<script src="<?= base_url('assets/js/modal.js') ?>"></script>
 </body>
 </html>
