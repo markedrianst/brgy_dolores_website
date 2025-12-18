@@ -12,22 +12,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="<?= base_url('css/variable.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('css/header.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('css/styles.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('css/footer.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('css/service.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('css/service-form.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/variable.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/header.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/footer.css') ?>"> 
 
 </head>
 <body>
 
-<!-- NAVIGATION -->
-<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+<nav class="navbar navbar-expand-lg navbar-custom ">
     <div class="container">
-        <a class="navbar-brand" href="<?= base_url() ?>">
-            <img src="<?= base_url('images/dolores_logo.png') ?>" style="max-width: 120px;">
-            <span>
+        <a class="navbar-brand d-flex align-items-center" href="<?= base_url() ?>">
+            
+            <!-- Parent wrapper for the logo -->
+            <div class="logo-wrapper">
+                <img src="<?= base_url('assets/images/dolores_logo1.png') ?>" class="logo-image" alt="Barangay Dolores Logo">
+            </div>
+
+            <!-- Brand text -->
+            <span class="brand-text">
                 Barangay Dolores
                 <small>Capas, Tarlac | Official Website</small>
             </span>
