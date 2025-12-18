@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/header.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/footer.css') ?>"> 
+    <link rel="stylesheet" href="<?= base_url('assets/css/service.css') ?>"> 
+    <link rel="stylesheet" href="<?= base_url('assets/css/service-form.css') ?>"> 
+    <link rel="stylesheet" href="<?= base_url('assets/css/about.css') ?>"> 
 
 </head>
 <body>
@@ -44,7 +47,7 @@
             <ul class="navbar-nav ms-auto align-items-lg-center">
                 <li class="nav-item"><a class="nav-link active" href="<?= base_url() ?>">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?= base_url('services') ?>">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?= base_url('about') ?>">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#announcements">Announcements</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
