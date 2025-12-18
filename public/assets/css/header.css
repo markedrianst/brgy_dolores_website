@@ -234,7 +234,6 @@
 
 /* Navbar Auto-hide Animation */
 .navbar-custom {
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -251,10 +250,6 @@
     transform: translateY(0);
 }
 
-/* Add padding to body to prevent content jump when navbar is fixed */
-body {
-    padding-top: 70px; /* Adjust based on your navbar height */
-}
 
 /* Back to Top Button (Optional) */
 .back-to-top {
