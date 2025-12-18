@@ -90,13 +90,6 @@
                             <p>Residents Served</p>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="stat-card">
-                            <i class="bi bi-file-earmark-check"></i>
-                            <h4>10,000+</h4>
-                            <p>Documents Processed</p>
-                        </div>
-                    </div>
                 </div>
                 <div class="d-flex flex-wrap gap-3 mb-4">
                     <a href="<?=base_url('services')?>" class="btn btn-primary-custom px-4 py-3">
