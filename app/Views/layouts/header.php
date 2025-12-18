@@ -23,13 +23,9 @@
 <nav class="navbar navbar-expand-lg navbar-custom ">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="<?= base_url() ?>">
-            
-            <!-- Parent wrapper for the logo -->
             <div class="logo-wrapper">
                 <img src="<?= base_url('assets/images/dolores_logo1.png') ?>" class="logo-image" alt="Barangay Dolores Logo">
             </div>
-
-            <!-- Brand text -->
             <span class="brand-text">
                 Barangay Dolores
                 <small>Capas, Tarlac | Official Website</small>

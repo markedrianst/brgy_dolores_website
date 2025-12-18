@@ -98,20 +98,18 @@
                         </div>
                     </div>
                 </div>
-
-
                 <div class="d-flex flex-wrap gap-3 mb-4">
                     <a href="#services" class="btn btn-primary-custom px-4 py-3">
                         Explore Our Services <i class="bi bi-arrow-right ms-2"></i>
                     </a>
                     <a href="#announcements" class="btn btn-outline-primary px-4 py-3">
-                        <i class="bi bi-megaphone me-2"></i> Latest Announcements
+                        <i class="bi bi-megaphone me-2"></i> News & Updates
                     </a>
                 </div>
             </div>
 
 
-            <div class="col-lg-6" data-aos="fade-left">->
+            <div class="col-lg-6" data-aos="fade-left">
                 <div class="hero-highlight mb-4">
                     <h5><i class="bi bi-megaphone-fill me-2"></i> Important Community Notice</h5>
                     <p class="mb-0">
@@ -120,61 +118,76 @@
                     </p>
                 </div>
                 
-     <div class="modern-carousel rounded-4 overflow-hidden" style="height: 300px;">
-    <?php if(!empty($gallery_images) && count($gallery_images) > 0): ?>
-        <!-- Bootstrap Carousel - Works without custom JS -->
-        <div id="barangayCarousel" class="carousel slide h-100" data-bs-ride="carousel">
-            
-            <?php if(count($gallery_images) > 1): ?>
-                <!-- Indicators/Dots -->
-                <div class="carousel-indicators">
-                    <?php foreach($gallery_images as $index => $image): ?>
-                        <button type="button" 
-                                data-bs-target="#barangayCarousel" 
-                                data-bs-slide-to="<?= $index ?>" 
-                                class="<?= $index === 0 ? 'active' : '' ?>"
-                                aria-current="<?= $index === 0 ? 'true' : 'false' ?>"
-                                aria-label="Slide <?= $index + 1 ?>">
-                        </button>
-                    <?php endforeach; ?>
+                <div class="modern-carousel rounded-4 overflow-hidden" style="height: 300px;">
+                    <?php if(!empty($gallery_images) && count($gallery_images) > 0): ?>
+                        <div id="barangayCarousel" class="carousel slide h-100" data-bs-ride="carousel" 
+                            data-bs-interval="4000" data-bs-pause="hover">
+                            
+                            <?php if(count($gallery_images) > 1): ?>
+                                <!-- Indicators/Dots -->
+                                <div class="carousel-indicators">
+                                    <?php foreach($gallery_images as $index => $image): ?>
+                                        <button type="button" 
+                                                data-bs-target="#barangayCarousel" 
+                                                data-bs-slide-to="<?= $index ?>" 
+                                                class="<?= $index === 0 ? 'active' : '' ?>"
+                                                aria-current="<?= $index === 0 ? 'true' : 'false' ?>"
+                                                aria-label="Slide <?= $index + 1 ?>">
+                                        </button>
+                                    <?php endforeach; ?>
+                                </div>
+                            <?php endif; ?>
+                            
+                            <!-- Slides with fluid image container -->
+                            <div class="carousel-inner h-100">
+                                <?php foreach($gallery_images as $index => $image): ?>
+                                    <div class="carousel-item h-100 <?= $index === 0 ? 'active' : '' ?>">
+                                        <div class="h-100 position-relative overflow-hidden">
+                                            <img src="<?= $image['path'] ?>" 
+                                                class="img-fluid carousel-image-fitted"
+                                                alt="Barangay Activity"
+                                                style="
+                                                    min-width: 100%;
+                                                    min-height: 100%;
+                                                    width: auto;
+                                                    height: auto;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    left: 50%;
+                                                    transform: translate(-50%, -50%);
+                                                    object-fit: cover;
+                                                ">
+                                            <!-- Optional: Add overlay for better text visibility -->
+                                            <div class="carousel-image-overlay"></div>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                            
+                            <!-- Navigation Arrows (only show if more than 1 image) -->
+                            <?php if(count($gallery_images) > 1): ?>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#barangayCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#barangayCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            <?php endif; ?>
+                        </div>
+                    <?php else: ?>
+                        <!-- Fallback if no images -->
+                        <div class="h-100 d-flex align-items-center justify-content-center bg-light">
+                            <div class="text-center">
+                                <i class="bi bi-images text-muted display-4 mb-3"></i>
+                                <h5>Barangay Gallery</h5>
+                                <p class="text-muted">Images will appear here when added to gallery folder</p>
+                            </div>
+                        </div>
+                    <?php endif; ?>
                 </div>
-            <?php endif; ?>
-            
-            <!-- Slides -->
-            <div class="carousel-inner h-100">
-                <?php foreach($gallery_images as $index => $image): ?>
-                    <div class="carousel-item h-100 <?= $index === 0 ? 'active' : '' ?>">
-                        <img src="<?= $image['path'] ?>" 
-                             class="d-block w-100 h-100" 
-                             alt="Barangay Activity"
-                             style="object-fit: cover;">
-                    </div>
-                <?php endforeach; ?>
-            </div>
-            
-            <!-- Navigation Arrows (only show if more than 1 image) -->
-            <?php if(count($gallery_images) > 1): ?>
-                <button class="carousel-control-prev" type="button" data-bs-target="#barangayCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#barangayCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            <?php endif; ?>
-        </div>
-    <?php else: ?>
-        <!-- Fallback if no images -->
-        <div class="h-100 d-flex align-items-center justify-content-center bg-light">
-            <div class="text-center">
-                <i class="bi bi-images text-muted display-4 mb-3"></i>
-                <h5>Barangay Gallery</h5>
-                <p class="text-muted">Images will appear here when added to gallery folder</p>
-            </div>
-        </div>
-    <?php endif; ?>
-</div>
+
             </div>
         </div>
     </div>

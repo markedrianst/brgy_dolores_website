@@ -397,38 +397,45 @@
     .btn-outline-primary { width: 100%; margin-bottom: 10px; }
 }
 
-.modern-carousel .carousel-item {
-    height: 300px;
+.carousel-image-fitted {
+    transition: transform 0.5s ease;
 }
 
-.modern-carousel .carousel-item img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 20px;
+.carousel-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.05));
+    pointer-events: none;
 }
 
-.modern-carousel .carousel-caption {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 10px 15px;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-}
-
-.modern-carousel .carousel-indicators {
-    bottom: 10px;
-}
-
-.modern-carousel .carousel-indicators button {
+/* Ensure carousel indicators are visible */
+.carousel-indicators button {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    margin: 0 5px;
     background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    margin: 0 4px;
 }
 
-.modern-carousel .carousel-indicators button.active {
+.carousel-indicators button.active {
     background-color: var(--primary-red);
+    transform: scale(1.2);
+}
+
+/* Smooth transitions */
+.carousel-item {
+    transition: transform 0.8s ease-in-out;
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
 }
