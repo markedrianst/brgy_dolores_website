@@ -1,0 +1,98 @@
+/* =========================
+   SERVICE FORM STYLES
+========================= */
+
+/* Container & Card */
+.service-form-page {
+    background: #f8f9fa;
+}
+
+.service-form-page .card {
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid #eaeaea;
+    background: white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+}
+
+.service-form-page .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(211, 47, 47, 0.15);
+    border-color: #d32f2f;
+}
+
+/* Section Title */
+.service-form-page .section-title {
+    color: #142c69ff;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.service-form-page .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #d32f2f;
+}
+
+/* Form Fields */
+.service-form-page form label {
+    font-weight: 600;
+    color: #142c69ff;
+}
+
+.service-form-page form input.form-control,
+.service-form-page form textarea.form-control,
+.service-form-page form select.form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s;
+}
+
+.service-form-page form input.form-control:focus,
+.service-form-page form textarea.form-control:focus,
+.service-form-page form select.form-control:focus {
+    border-color: #d32f2f;
+    box-shadow: 0 0 0 0.2rem rgba(211, 47, 47, 0.2);
+}
+
+/* File Upload */
+.service-form-page input[type="file"] {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 0.375rem 0.75rem;
+}
+
+/* Buttons */
+.service-form-page .btn-primary-custom {
+    background-color: #d32f2f;
+    border: 2px solid #d32f2f;
+    color: white;
+    border-radius: 6px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.service-form-page .btn-primary-custom:hover {
+    background-color: transparent;
+    color: #d32f2f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(211, 47, 47, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service-form-page .card {
+        padding: 1.5rem;
+    }
+}

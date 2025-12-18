@@ -12,10 +12,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="<?= base_url('assets/css/variable.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/header.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/footer.css') ?>"> 
+=======
+    <link rel="stylesheet" href="<?= base_url('css/variable.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('css/header.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('css/styles.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('css/footer.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('css/service.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('css/service-form.css') ?>">
+>>>>>>> 7ef8c963b246b0d118cc2f3ba53f88e0e5035d38
 
 </head>
 <body>
@@ -43,7 +52,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto align-items-lg-center">
                 <li class="nav-item"><a class="nav-link active" href="<?= base_url() ?>">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?= base_url('services') ?>">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#announcements">Announcements</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>

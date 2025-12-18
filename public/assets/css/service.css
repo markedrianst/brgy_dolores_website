@@ -1,0 +1,106 @@
+/* service.css */
+
+/* PAGE LAYOUT */
+.services-page {
+    background-color: #f8f9fa;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* SECTION TITLE */
+.services-page .section-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #142c69ff;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.services-page .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #d32f2f;
+}
+
+/* SERVICE CARDS */
+.service-detail {
+    border-radius: 12px;
+    padding: 1.8rem;
+    background: white;
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.service-detail:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(211, 47, 47, 0.15);
+}
+
+.service-detail h4 {
+    color: #d32f2f;
+    margin-bottom: 0.75rem;
+}
+
+.service-detail p {
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.service-detail .btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.service-detail .btn-sm {
+    padding: 0.35rem 0.9rem;
+}
+
+/* BUTTON STYLES */
+.btn-primary-custom {
+    background-color: #d32f2f;
+    border: 2px solid #d32f2f;
+    color: white;
+}
+
+.btn-primary-custom:hover {
+    background-color: transparent;
+    color: #d32f2f;
+    box-shadow: 0 4px 8px rgba(211, 47, 47, 0.2);
+}
+
+.btn-outline-primary {
+    border-color: #d32f2f;
+    color: #d32f2f;
+}
+
+.btn-outline-primary:hover {
+    background-color: #d32f2f;
+    color: white;
+}
+
+/* CONTACT BLOCK */
+.services-page .text-center h5 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #142c69ff;
+}
+
+.services-page .text-center p {
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .services-page .section-title {
+        font-size: 2rem;
+    }
+}

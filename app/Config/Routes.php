@@ -9,3 +9,4 @@ $routes->get('/', 'Home::index');
 $routes->get('/about', 'Home::about');
 $routes->get('/services', 'Home::services');
 
+$routes->get('/services/(:segment)', 'ServiceController::form/$1');
