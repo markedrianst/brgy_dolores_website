@@ -99,10 +99,10 @@
                     </div>
                 </div>
                 <div class="d-flex flex-wrap gap-3 mb-4">
-                    <a href="#services" class="btn btn-primary-custom px-4 py-3">
+                    <a href="<?=base_url('services')?>" class="btn btn-primary-custom px-4 py-3">
                         Explore Our Services <i class="bi bi-arrow-right ms-2"></i>
                     </a>
-                    <a href="#announcements" class="btn btn-outline-primary px-4 py-3">
+                    <a href="<?=base_url('news_updates')?>" class="btn btn-outline-primary px-4 py-3">
                         <i class="bi bi-megaphone me-2"></i> News & Updates
                     </a>
                 </div>
