@@ -1,4 +1,4 @@
-    <!-- FOOTER -->
+<!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="row gy-5">
@@ -7,7 +7,8 @@
                         <img 
                             src="<?= base_url('assets/images/dolores_logo.png') ?>" 
                             style="max-width: 120px;"
-                        >    <div class="footer-logo-text">
+                        >    
+                        <div class="footer-logo-text">
                             <h5>Barangay Dolores</h5>
                             <small>Capas, Tarlac | Official Website</small>
                         </div>
@@ -27,9 +28,9 @@
                 <div class="col-lg-2">
                     <h6 class="footer-title">Quick Links</h6>
                     <div class="footer-links">
-                        <a href="#">Home</a>
-                        <a href="#services">Services</a>
-                        <a href="#about">About Us</a>
+                        <a href="<?= base_url() ?>">Home</a>
+                        <a href="<?= base_url('services') ?>">Services</a>
+                        <a href="<?= base_url('about') ?>">About Us</a>
                         <a href="#announcements">Announcements</a>
                         <a href="#events">Events</a>
                         <a href="#officials">Officials</a>
@@ -62,7 +63,7 @@
 
             <div class="row footer-bottom">
                 <div class="col-md-6">
-                    <p class="mb-0">© 2025 Barangay Dolores, Capas, Tarlac. All Rights Reserved.</p>
+                    <p class="mb-0">© <span id="current-year">2025</span> Barangay Dolores, Capas, Tarlac. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <p class="mb-0">
@@ -73,6 +74,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,7 +1,7 @@
 <?= $this->include('layouts/header') ?>
 
 <!-- MAIN HERO CAROUSEL -->
-<main style="height: 85vh; ">
+<main style="height: 85vh; margin-top: 90px;" id="home">
     <div class="container-fluid p-0 h-100">
         <div id="myCarousel"
              class="carousel slide h-100"

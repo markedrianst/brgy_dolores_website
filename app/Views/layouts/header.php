@@ -20,6 +20,14 @@
 </head>
 <body>
 
+<?php 
+// Get current URI for active menu detection
+$uri = service('uri');
+$segment = $uri->getSegment(1);
+?>
+<head>
+    
+</head>
 <nav class="navbar navbar-expand-lg navbar-custom ">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="<?= base_url() ?>">
@@ -38,11 +46,24 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto align-items-lg-center">
-                <li class="nav-item"><a class="nav-link active" href="<?= base_url() ?>">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="<?= base_url('services') ?>">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#announcements">Announcements</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item">
+                    <a class="nav-link <?= (empty($segment) || $segment == '') ? 'active' : '' ?>" 
+                       href="<?= base_url() ?>">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?= ($segment == 'services') ? 'active' : '' ?>" 
+                       href="<?= base_url('services') ?>">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link <?= ($segment == 'about') ? 'active' : '' ?>" 
+                       href="<?= base_url('about') ?>">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#announcements">Announcements</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
             </ul>
         </div>
     </div>
