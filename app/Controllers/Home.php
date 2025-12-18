@@ -66,17 +66,17 @@ class Home extends BaseController
 
     public function news_updates()
     {
-        return view('pages/news_updates');
-    }
-        
-    public function community()
-        {
-            // Load JSON file
-            $jsonPath = WRITEPATH . 'data/community.json';
-            $communityData = json_decode(file_get_contents($jsonPath), true);
+        $jsonPath = WRITEPATH . 'data/news.json';
+        $news = [];
 
-            // Pass data to view
-            return view('pages/about', ['communityData' => $communityData]);
+        if (file_exists($jsonPath)) {
+            $news = json_decode(file_get_contents($jsonPath), true);
         }
+
+        return view('pages/news_updates', [
+            'news' => $news
+        ]);
+    }
+
 
 }

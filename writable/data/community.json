@@ -2,31 +2,22 @@
     {
         "image": "fiesta.jpg",
         "alt": "Community Gathering",
-        "title": "Annual Barangay Fiesta"
+        "title": "Annual Barangay Fiesta",
+        "date": "October-12-2025",
+        "description": "Join us for an exciting community gathering where we come together to celebrate life, share experiences, and create lasting memories."
     },
-    {
-        "image": "clean.jpg",
-        "alt": "Clean-up Drive",
-        "title": "Weekly Clean Up Drive"
+        {
+        "image": "fiesta.jpg",
+        "alt": "Community Gathering",
+        "title": "Annual Barangay Fiesta",
+        "date": "October-12-2025",
+        "description": "Join us for an exciting community gathering where we come together to celebrate life, share experiences, and create lasting memories."
     },
-    {
-        "image": "pms.jpg",
-        "alt": "Youth Activity",
-        "title": "Parol Making Contest"
-    },
-    {
-        "image": "pms.jpg",
-        "alt": "Youth Activity",
-        "title": "Parol Making Contest"
-    },
-    {
-        "image": "pms.jpg",
-        "alt": "Youth Activity",
-        "title": "Parol Making Contest"
-    },
-    {
-        "image": "pms.jpg",
-        "alt": "Youth Activity",
-        "title": "Parol Making Contest"
+        {
+        "image": "fiesta.jpg",
+        "alt": "Community Gathering",
+        "title": "Annual Barangay Fiesta",
+        "date": "October-12-2025",
+        "description": "Join us for an exciting community gathering where we come together to celebrate life, share experiences, and create lasting memories."
     }
 ]
