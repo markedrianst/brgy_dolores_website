@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/service.css') ?>"> 
     <link rel="stylesheet" href="<?= base_url('assets/css/service-form.css') ?>"> 
     <link rel="stylesheet" href="<?= base_url('assets/css/about.css') ?>"> 
+    <link rel="stylesheet" href="<?= base_url('assets/css/news_updates.css') ?>"> 
 
 </head>
 <body>
@@ -60,7 +61,8 @@ $segment = $uri->getSegment(1);
                        href="<?= base_url('about') ?>">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#announcements">News & Updates</a>
+                    <a class="nav-link <?= ($segment == 'news_updates') ? 'active' : '' ?>"
+                    href="<?= base_url('about') ?>">News & Updates</a>
                 </li>
             </ul>
         </div>
