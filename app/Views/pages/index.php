@@ -315,4 +315,310 @@
     </div>
 </section>
 
+<style>
+/* Main Carousel Modern Styling */
+#myCarousel .carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(211, 47, 47, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 1;
+}
+
+#myCarousel .carousel-overlay-light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+.carousel-caption-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+    z-index: 2;
+}
+
+.carousel-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-text {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-outline-light {
+    border: 2px solid white;
+    color: white;
+    padding: 0.9rem 2.5rem;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background: white;
+    color: var(--primary-red);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Hero Badge */
+.hero-badge {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background: linear-gradient(135deg, rgba(211, 47, 47, 0.1), rgba(211, 47, 47, 0.05));
+    border: 2px solid rgba(211, 47, 47, 0.2);
+    border-radius: 50px;
+    color: var(--primary-red);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* Stats Cards */
+.stat-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    border: 2px solid rgba(211, 47, 47, 0.1);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(211, 47, 47, 0.2);
+    border-color: rgba(211, 47, 47, 0.3);
+}
+
+.stat-card i {
+    font-size: 2rem;
+    color: var(--primary-red);
+    margin-bottom: 0.5rem;
+}
+
+.stat-card h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary-red);
+    margin: 0.5rem 0;
+}
+
+.stat-card p {
+    font-size: 0.9rem;
+    color: var(--medium-gray);
+    margin: 0;
+}
+
+/* Modern Carousel for Barangay */
+.modern-carousel {
+    border-radius: 24px;
+    overflow: hidden;
+    border: 3px solid rgba(211, 47, 47, 0.1);
+}
+
+/* Section Badge */
+.section-badge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: linear-gradient(135deg, var(--primary-red), #ff6b6b);
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* Service Request Cards - Modern Design */
+.service-request-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    height: 100%;
+    border: 2px solid rgba(211, 47, 47, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-request-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-red), #ff6b6b);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.service-request-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-request-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(211, 47, 47, 0.2);
+    border-color: rgba(211, 47, 47, 0.3);
+}
+
+.service-request-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(211, 47, 47, 0.1), rgba(211, 47, 47, 0.05));
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.service-request-card:hover .service-request-icon {
+    background: linear-gradient(135deg, var(--primary-red), #ff6b6b);
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.service-request-icon i {
+    font-size: 2rem;
+    color: var(--primary-red);
+    transition: color 0.3s ease;
+}
+
+.service-request-card:hover .service-request-icon i {
+    color: white;
+}
+
+.service-request-title {
+    color: var(--dark-gray);
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.service-request-desc {
+    color: var(--medium-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.service-request-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(211, 47, 47, 0.1);
+    border-radius: 50%;
+    color: var(--primary-red);
+    transition: all 0.3s ease;
+}
+
+.service-request-card:hover .service-request-arrow {
+    background: var(--primary-red);
+    color: white;
+    transform: translateX(5px);
+}
+
+/* Quick Info Section */
+.quick-info-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.info-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    border: 2px solid rgba(211, 47, 47, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.info-card.emergency {
+    background: linear-gradient(135deg, rgba(211, 47, 47, 0.05), rgba(255, 107, 107, 0.05));
+    border-color: rgba(211, 47, 47, 0.2);
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(211, 47, 47, 0.15);
+}
+
+.info-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary-red), #ff6b6b);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 4px 20px rgba(211, 47, 47, 0.3);
+}
+
+.info-icon i {
+    font-size: 1.75rem;
+    color: white;
+}
+
+.info-card h5 {
+    font-weight: 700;
+    color: var(--dark-gray);
+    margin-bottom: 1rem;
+}
+
+.info-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-red);
+    margin: 1rem 0;
+}
+
+.info-card small {
+    color: var(--medium-gray);
+    font-size: 0.85rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel-title {
+        font-size: 2rem;
+    }
+    
+    .carousel-text {
+        font-size: 1rem;
+    }
+    
+    .carousel-caption-custom {
+        padding: 1rem;
+    }
+    
+    .stat-card h4 {
+        font-size: 1.5rem;
+    }
+    
+    .info-number {
+        font-size: 2rem;
+    }
+}
+</style>
+
 <?= $this->include('layouts/footer') ?>
