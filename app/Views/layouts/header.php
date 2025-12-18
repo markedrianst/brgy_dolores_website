@@ -62,7 +62,7 @@ $segment = $uri->getSegment(1);
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?= ($segment == 'news_updates') ? 'active' : '' ?>"
-                    href="<?= base_url('about') ?>">News & Updates</a>
+                    href="<?= base_url('news_updates') ?>">News & Updates</a>
                 </li>
             </ul>
         </div>
