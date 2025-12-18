@@ -16,8 +16,6 @@
                         <h4 class="text-primary-custom">BRGY ID REQUEST</h4>
                         <p class="text-muted">Apply for your Barangay ID or community identification card.</p>
                         <div class="d-flex gap-3">
-                        <a href="<?= base_url('services/id-online') ?>" class="btn btn-primary-custom btn-sm">Online Application</a>
-                        <a href="<?=base_url('assets/template/template.docx')?>" class="btn btn-outline-primary btn-sm">Personal Application</a>
                         </div>
                     </div>
                 </div>
@@ -29,10 +27,6 @@
                     <div class="card-body">
                         <h4 class="text-primary-custom">BRGY Business Clearance/Permit</h4>
                         <p class="text-muted">Apply or renew business clearance and permits in your barangay.</p>
-                        <div class="d-flex gap-3">
-                            <a href="<?= base_url('services/business-clearance-online') ?>" class="btn btn-primary-custom btn-sm">Online Form</a>
-                            <a href="<?=base_url('assets/template/template.docx')?>" class="btn btn-outline-primary btn-sm">Personal Application</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -43,10 +37,6 @@
                     <div class="card-body">
                         <h4 class="text-primary-custom">BRGY Certificate of Indigency</h4>
                         <p class="text-muted">Request a Barangay Certificate of Indigency for official purposes.</p>
-                        <div class="d-flex gap-3">
-                            <a href="<?= base_url('services/indigency-online') ?>" class="btn btn-primary-custom btn-sm">Online Application</a>
-                            <a href="<?=base_url('assets/template/template.docx')?>" class="btn btn-outline-primary btn-sm">Personal Application</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -57,10 +47,6 @@
                     <div class="card-body">
                         <h4 class="text-primary-custom">BRGY Certificate of Residency</h4>
                         <p class="text-muted">Obtain your Certificate of Residency for official requirements.</p>
-                        <div class="d-flex gap-3">
-                            <a href="<?= base_url('services/residency-online') ?>" class="btn btn-primary-custom btn-sm">Online Application</a>
-                            <a href="<?=base_url('assets/template/template.docx')?>" class="btn btn-outline-primary btn-sm" download="Residency.docx">Personal Application</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -72,10 +58,6 @@
                         <h4 class="text-primary-custom">Certifications for Specific Purposes</h4>
                         <p class="text-muted">Request Barangay certifications for school, employment, or other purposes.</p>
                         <div class="d-flex gap-3">
-                            <a href="<?= base_url('services/certification-online') ?>" class="btn btn-primary-custom btn-sm">Online Application</a>
-                            <a href="<?=base_url('assets/template/template.docx')?>" class="btn btn-outline-primary btn-sm" download="Dolores_Form.docx">
-                                Personal Application
-                            </a>
                         </div>
                     </div>
                 </div>
