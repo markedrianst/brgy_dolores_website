@@ -24,7 +24,6 @@
                             <h5 class="news-title"><?= esc($item['title']) ?></h5>
                             <p class="news-date text-muted"><?= esc($item['date']) ?></p>
                             <p class="news-description"><?= esc($item['description']) ?></p>
-                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
                         </div>
                     </div>
                 </div>
