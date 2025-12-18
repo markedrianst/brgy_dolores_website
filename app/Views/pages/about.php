@@ -162,31 +162,56 @@
         </div>
     </section>
 
-    <!-- COMMUNITY PHOTOS -->
-    <section class="about-section bg-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-5 fade-in-up">Community & Events</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                        <img src="<?= base_url('assets/images/fiesta.jpg') ?>"                         class="img-fluid community-photo fade-in-up" 
-                         alt="Community Gathering">
-                    <p class="mt-2 text-center fw-bold">Annual Barangay Fiesta</p>
+<?php if (!empty($communityData)): ?>
+<section class="about-section bg-light">
+    <div class="container">
+        <h2 class="section-title text-center mb-5 fade-in-up">Community & Events</h2>
+        <div class="row g-4">
+            <?php foreach ($communityData as $index => $item): ?>
+                <div class="col-md-4 text-center">
+                    <img 
+                        src="<?= base_url('assets/images/' . $item['image']) ?>" 
+                        class="img-fluid community-photo fade-in-up <?= $index > 0 ? 'delay-' . $index : '' ?> cursor-pointer"
+                        alt="<?= esc($item['alt']) ?>"
+                        data-bs-toggle="modal"
+                        data-bs-target="#communityModal"
+                        data-image="<?= base_url('assets/images/' . $item['image']) ?>"
+                        data-title="<?= esc($item['title']) ?>"
+                    >
+                    <p class="mt-2 fw-bold"><?= esc($item['title']) ?></p>
                 </div>
-                <div class="col-md-4">
-                        <img src="<?= base_url('assets/images/clean.jpg') ?>"
-                         class="img-fluid community-photo fade-in-up delay-1" 
-                         alt="Clean-up Drive">
-                    <p class="mt-2 text-center fw-bold">Weekly Clean Up Drive</p>
-                </div>
-                <div class="col-md-4">
-                        <img src="<?= base_url('assets/images/pms.jpg') ?>"
-                         class="img-fluid community-photo fade-in-up delay-2" 
-                         alt="Youth Activity">
-                    <p class="mt-2 text-center fw-bold">Parol Making Contest</p>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+<?php endif; ?>
+
+
+<div class="modal fade" id="communityModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content community-modal border-0">
+
+            <!-- Close Button -->
+            <button type="button"
+                class="btn-close btn-close-white community-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+
+            <!-- Image -->
+            <div class="modal-body p-0 position-relative">
+                <img id="communityModalImage"
+                     class="img-fluid w-100 rounded"
+                     alt="">
+
+                <!-- Caption Overlay -->
+                <div class="community-caption">
+                    <h5 id="communityModalTitle" styles="font-size: 1.2rem;" class="mb-0 fw-bold"></h5>
                 </div>
             </div>
+
         </div>
-    </section>
+    </div>
+</div>
 
 
 <?= $this->include('layouts/footer') ?>
