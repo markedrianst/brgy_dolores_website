@@ -1,4 +1,9 @@
 [
+        {
+        "image": "float.jpg",
+        "alt": "Youth Activity",
+        "title": "Float Competition"
+    },
     {
         "image": "fiesta.jpg",
         "alt": "Community Gathering",
@@ -15,19 +20,13 @@
         "title": "Parol Making Contest"
     },
     {
-        "image": "pms.jpg",
-        "alt": "Youth Activity",
-        "title": "Parol Making Contest"
+        "image": "sk.jpg",
+        "alt": "linggo-ng-kabataan",
+        "title": "Mobile Legends Tournament"
     },
     {
-        "image": "pms.jpg",
+        "image": "tree_planting.jpg",
         "alt": "Youth Activity",
-        "title": "Parol Making Contest"
-    }
-,
-    {
-        "image": "pms.jpg",
-        "alt": "Youth Activity",
-        "title": "Parol Making Contest"
+        "title": "Tree Planting"
     }
 ]

@@ -36,7 +36,6 @@
                     <h6 class="footer-title">Contact Information</h6>
                     <div class="footer-contact">
                         <p><i class="bi bi-geo-alt"></i> Barangay Dolores, Capas, Tarlac 2315</p>
-                        <p><i class="bi bi-telephone"></i> (045) 123-4567</p>
                         <p><i class="bi bi-phone"></i> +63 912 345 6789</p>
                         <p><i class="bi bi-envelope"></i> info@barangaydolores.gov.ph</p>
                         <p><i class="bi bi-clock"></i> Emergency Hotline: 911</p>

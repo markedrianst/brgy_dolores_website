@@ -1,7 +1,7 @@
 <?= $this->include('layouts/header') ?>
 
 <!-- MAIN HERO CAROUSEL -->
-<main class="sections" style="height: 85vh;" id="home">
+<main class="sections" id="home">
     <div class="container-fluid p-0 h-100">
         <div id="myCarousel"
              class="carousel slide h-100"
@@ -40,11 +40,11 @@
 
                 <!-- Slide 3 -->
                 <div class="carousel-item h-100">
-                    <div class="carousel-overlay-light"></div>
-                    <img src="<?= base_url('assets/images/dolores_logo.png') ?>"
+                    <div class="carousel-overlay"></div>
+                    <img src="<?= base_url('assets/images/dolores_lg.jpg') ?>"
                          class="d-block w-100 h-100"
-                         style="object-fit: contain; background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);"
-                         alt="Barangay Dolores Logo">
+                         style="object-fit: cover;"
+                         alt="Barangay Services">
                 </div>
             </div>
 

@@ -64,15 +64,7 @@
             </div>
 
         </div>
-
-        <!-- Contact Block -->
-        <div class="text-center mt-5">
-            <h5>Need Assistance?</h5>
-            <p class="text-muted">
-                Contact us at <strong>info@barangaydolores.gov.ph</strong> or call <strong>(045) 123-4567</strong>
-            </p>
-        </div>
-    </div>
 </section>
+
 
 <?= $this->include('layouts/footer') ?>
