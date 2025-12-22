@@ -21,7 +21,7 @@
                 <!-- Slide 1 -->
                 <div class="carousel-item active h-100">
                     <div class="carousel-overlay"></div>
-                    <img src="<?= base_url('assets/images/slide1.jpg') ?>"
+                    <img src="<?= base_url('assets/images/slide1.png') ?>"
                          class="d-block w-100 h-100"
                          style="object-fit: cover;"
                          alt="Barangay Dolores Community">
@@ -31,7 +31,7 @@
                 <!-- Slide 2 -->
                 <div class="carousel-item h-100">
                     <div class="carousel-overlay"></div>
-                    <img src="<?= base_url('assets/images/slide2.jpg') ?>"
+                    <img src="<?= base_url('assets/images/slide2.png') ?>"
                          class="d-block w-100 h-100"
                          style="object-fit: cover;"
                          alt="Barangay Services">
@@ -41,7 +41,7 @@
                 <!-- Slide 3 -->
                 <div class="carousel-item h-100">
                     <div class="carousel-overlay"></div>
-                    <img src="<?= base_url('assets/images/dolores_lg.jpg') ?>"
+                    <img src="<?= base_url('assets/images/dolores_lg.png') ?>"
                          class="d-block w-100 h-100"
                          style="object-fit: cover;"
                          alt="Barangay Services">
@@ -83,7 +83,7 @@
                     We serve with integrity, compassion, and dedication to build a better community for all.
                 </p>
                 <div class="row g-3 mb-4">
-                    <div class="col-6">
+                    <div class="col-12">
                         <div class="stat-card">
                             <i class="bi bi-people-fill"></i>
                             <h4>5,000+</h4>
